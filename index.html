@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Cash Register</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
 </head>
-
 <body>
     <div class="container">
-        <h1 class="heading">Cash Register Manager</h1>
+        <h1>Cash Register Manager</h1>
         <p class="description">
-            Enter the bill amount and cash given by the customer and know minimum number of notes to return.
+            Enter the bill amount and cash given by the container and we will tell you the minimum number of notes to return.
         </p>
-        <label for="bill-amount">Bill amount</label>
-        <input id="bill-amount" type="text"  placeholder="Enter the bill amount here"/>
-        
+        <label for="bill-amount">Bill Amount</label>
+        <input type="text" 
+        id="bill-amount"
+        placeholder="Enter the bill amount">
         <label for="cash-given">Cash Given</label>
-        <input id="cash-given" type="text" placeholder="Enter the cash you have given">
+        <input type="text"
+        id="cash-given"
+        placeholder="Enter the cash given">
+        <button id="check-button">Check</button>
+        <p id="error-message"></p>
         <table class="change-table">
             <caption>Return Change</caption>
             <tr>
                 <th>No. of notes</th>
-                <td></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
             </tr>
             <tr>
                 <th>Notes</th>
                 <td>2000</td>
                 <td>500</td>
                 <td>100</td>
-                <td>50</td>
+                <td>20</td>
                 <td>10</td>
                 <td>5</td>
                 <td>1</td>
@@ -39,5 +48,5 @@
         </table>
     </div>
 </body>
-<script src="index.js" type="text/javascript"></script>
+<script src="./index.js" type="text/javascript"></script>
 </html>

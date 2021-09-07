@@ -1,9 +1,19 @@
-*{
+* {}
 
-}
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 50vw;
+}
+
+table,
+th,
+tr ,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    table-layout: fixed;
+    width: 150%;
 }
